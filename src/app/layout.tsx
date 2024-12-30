@@ -1,10 +1,14 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import './globals.css'
-import Header from '@/components/header'
-import Footer from '@/components/footer'
+import Header from '../components/header'
+import Footer from '../components/footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata: Metadata = {
   title: 'ProGen',
@@ -17,10 +21,10 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={roboto.className}>
+      <body>
         <Header />
-        <main className="pt-16">{children}</main>
+        <main className="pt-20">{children}</main>
         <Footer />
       </body>
     </html>

@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
           <div>
             <h3 className="font-bold mb-4">Contact Info</h3>
-            <p className="text-sm text-gray-600">123 NGO Street, City, Country</p>
+            <p className="text-sm text-gray-600">123 ProGen Street, City, Country</p>
             <p className="text-sm text-gray-600">Phone: +1 234 567 8900</p>
             <p className="text-sm text-gray-600">Email: info@progen.org</p>
           </div>

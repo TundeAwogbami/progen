@@ -6,14 +6,10 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 bg-white z-50 border-b">
       <div className="container flex h-20 items-center justify-between px-4">
-        <Link href="/" className="flex items-center space-x-2">
-          <Image 
-            src="/logo.svg" 
-            alt="Logo" 
-            width={32} 
-            height={32}
-          />
-          <span className="font-bold text-xl">ProGen Hub</span>
+        <Link href="/" className="flex items-center">
+          <span className="font-bold text-xl">ProGen</span>
+          <span className="font-bold text-xl text-gray-500">Hub</span>
+          <span className="text-red-500 ml-1">innovation</span>
         </Link>
         <nav className="hidden md:flex items-center space-x-8">
           <Link href="/" className="text-sm font-medium hover:text-red-600">
@@ -32,7 +28,7 @@ export default function Header() {
             Contact
           </Link>
         </nav>
-        <Button className="bg-red-600 hover:bg-red-700">Donate</Button>
+        <Button className="bg-[#2D3748] hover:bg-[#1A202C]">Donate</Button>
       </div>
     </header>
   )

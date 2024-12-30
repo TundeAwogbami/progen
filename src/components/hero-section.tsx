@@ -3,60 +3,65 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
-
-const slides = [
-  {
-    title: "Driving Innovation...",
-    subtitle: "Celebrating Achievements",
-    description: "Powering Schools and Students for exceptional education",
-    image: "/hero-image.jpg"
-  },
-  // Add more slides as needed
-]
+import { Play } from 'lucide-react'
 
 export function HeroSection() {
-  const [currentSlide, setCurrentSlide] = useState(0)
-
   return (
-    <section className="relative h-[600px] overflow-hidden">
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-opacity duration-500 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <Image
-            src={slide.image}
-            alt={slide.title}
-            fill
-            className="object-cover"
-            priority
-          />
-          <div className="absolute inset-0 bg-black/40" />
-          <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center text-white">
-            <h1 className="text-6xl font-bold mb-4">{slide.title}</h1>
-            <p className="text-4xl mb-6">{slide.subtitle}</p>
-            <p className="text-xl mb-8 max-w-2xl">{slide.description}</p>
-            <Button size="lg" className="w-fit bg-red-600 hover:bg-red-700">
-              See all
+    <section className="relative h-screen">
+      <Image
+        src="/images/hero-image.jpg"
+        alt="University building"
+        fill
+        className="object-cover"
+        priority
+      />
+      <div className="absolute inset-0 bg-black/40" />
+      <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center">
+        <div className="max-w-3xl">
+          <h1 className="text-6xl font-bold text-white mb-4">
+            Driving Innovation...
+            <br />
+            Celebrating Achievements
+          </h1>
+          <p className="text-xl text-white mb-8">
+            Rewarding Schools and Students for exceptional performances
+          </p>
+          <div className="flex space-x-4 mb-8">
+            <Button 
+              className="bg-[#FF6B6B] hover:bg-[#FF5252] text-white px-8"
+            >
+              What we do
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-white text-white hover:bg-white/10"
+            >
+              <Play className="mr-2 h-4 w-4" />
+              Play Video
+            </Button>
+          </div>
+          <div className="flex space-x-4">
+            <Button 
+              variant="outline" 
+              className="border-white text-white hover:bg-white/10"
+            >
+              Sign up
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-white text-white hover:bg-white/10"
+            >
+              Sign in
             </Button>
           </div>
         </div>
-      ))}
-      <button
-        onClick={() => setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1))}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-20"
-      >
-        <ChevronLeft className="h-8 w-8 text-white" />
-      </button>
-      <button
-        onClick={() => setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1))}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-20"
-      >
-        <ChevronRight className="h-8 w-8 text-white" />
-      </button>
+      </div>
+      <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white py-4">
+        <div className="container mx-auto px-4 flex justify-between">
+          <p className="text-sm">1000 schools under our radar</p>
+          <p className="text-sm">100 donations collected</p>
+        </div>
+      </div>
     </section>
   )
 }

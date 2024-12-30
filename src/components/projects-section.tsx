@@ -2,9 +2,9 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 
 interface ProjectCardProps {
-  title: string
-  description: string
-  imageUrl: string
+  title: string;
+  description: string;
+  imageUrl: string;
 }
 
 function ProjectCard({ title, description, imageUrl }: ProjectCardProps) {
@@ -20,7 +20,7 @@ function ProjectCard({ title, description, imageUrl }: ProjectCardProps) {
       <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 text-white transition-all duration-300 translate-y-full group-hover:translate-y-0">
         <h3 className="text-xl font-bold mb-2">{title}</h3>
         <p className="mb-4">{description}</p>
-        <Button variant="outline" className="w-fit">Learn more</Button>
+        <Button variant="outline" className="w-fit border-white text-white hover:bg-white hover:text-black">Learn more</Button>
       </div>
     </div>
   )
@@ -31,22 +31,22 @@ export function ProjectsSection() {
     {
       title: "Awards and outdoor charity",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: "/placeholder.svg?height=300&width=400"
+      imageUrl: "/project1.jpg"
     },
     {
       title: "Weekly excursions",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: "/placeholder.svg?height=300&width=400"
+      imageUrl: "/project2.jpg"
     },
     {
       title: "Monthly public awareness",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      imageUrl: "/placeholder.svg?height=300&width=400"
+      imageUrl: "/project3.jpg"
     }
   ]
 
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20">
       <div className="container px-4">
         <h2 className="text-3xl font-bold mb-12 text-center">
           We are creating a place where schools with special talents can be seen.

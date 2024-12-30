@@ -9,8 +9,8 @@ const slides = [
   {
     title: "Driving Innovation...",
     subtitle: "Celebrating Achievements",
-    description: "ProGen: Powering Schools and Students for exceptional education",
-    image: "/hero-1.jpg"
+    description: "Powering Schools and Students for exceptional education",
+    image: "/hero-image.jpg"
   },
   // Add more slides as needed
 ]
@@ -36,11 +36,11 @@ export function HeroSection() {
           />
           <div className="absolute inset-0 bg-black/40" />
           <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-center text-white">
-            <h1 className="text-5xl font-bold mb-4">{slide.title}</h1>
-            <p className="text-3xl mb-6">{slide.subtitle}</p>
-            <p className="text-xl mb-8">{slide.description}</p>
-            <Button size="lg" className="w-fit">
-              Learn More
+            <h1 className="text-6xl font-bold mb-4">{slide.title}</h1>
+            <p className="text-4xl mb-6">{slide.subtitle}</p>
+            <p className="text-xl mb-8 max-w-2xl">{slide.description}</p>
+            <Button size="lg" className="w-fit bg-red-600 hover:bg-red-700">
+              See all
             </Button>
           </div>
         </div>

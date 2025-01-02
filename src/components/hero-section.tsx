@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Play } from 'lucide-react'
 
@@ -33,26 +34,28 @@ export function HeroSection() {
               What we do
             </Button>
             <Button 
-              variant="outline" 
-              className="border-white text-white hover:bg-white/10"
+              className="bg-[#2D3748] text-white hover:bg-white/10"
             >
               <Play className="mr-2 h-4 w-4" />
               Play Video
             </Button>
           </div>
-          <div className="flex space-x-4">
-            <Button 
-              variant="outline" 
-              className="border-white text-white hover:bg-white/10"
-            >
-              Sign up
-            </Button>
-            <Button 
-              variant="outline" 
-              className="border-white text-white hover:bg-white/10"
-            >
-              Sign in
-            </Button>
+          <div className="flex space-x-10">
+            <Link href="/signup">
+              <Button 
+                className="bg-[#2D3748] border-white text-white hover:bg-[#FF5252]"
+              >
+                Sign up
+              </Button>
+            </Link>
+            <Link href="/signin">
+              <Button 
+                variant="outline" 
+                className="bg-[#2D3748] text-white hover:bg-white/10"
+              >
+                Sign in
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

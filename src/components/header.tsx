@@ -28,7 +28,9 @@ export default function Header() {
             Contact
           </Link>
         </nav>
-        <Button className="bg-[#2D3748] hover:bg-[#1A202C]">Donate</Button>
+        <Link href="/donate">
+          <Button className="bg-[#2D3748] hover:bg-[#1A202C]">Donate</Button>
+        </Link>
       </div>
     </header>
   )

@@ -57,6 +57,10 @@ export function DonateContent() {
             How you can contribute making our Vision come true
           </h2>
 
+          <p className="text-gray-600">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+            eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum</p>
+
           <Card>
             <CardContent className="p-6">
               <div className="flex space-x-1 border-b mb-6">

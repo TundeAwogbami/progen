@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 
 export function DonateHero() {
@@ -17,12 +18,14 @@ export function DonateHero() {
               When you donate, you're supporting different ways to achieve our
               vision and contribute to the support of education.
             </p>
-            <Button 
-              size="lg"
-              className="bg-[#FF6B6B] hover:bg-[#000000]"
-            >
-              Donate now
-            </Button>
+            <Link href="/donate/now">
+              <Button 
+                size="lg"
+                className="bg-[#FF6B6B] hover:bg-[#FF5252]"
+              >
+                Donate now
+              </Button>
+            </Link>
           </div>
           
           <div className="relative aspect-[4/3] rounded-lg overflow-hidden">

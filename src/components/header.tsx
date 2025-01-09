@@ -31,9 +31,21 @@ export default function Header() {
             Contact
           </Link>
         </nav>
-        <Link href="/donate">
-          <Button className="bg-[#2D3748] hover:bg-[#1A202C]">Donate</Button>
-        </Link>
+        <div className="hidden md:flex items-center space-x-4">
+          <Link href="/donate">
+            <Button className="bg-[#2D3748] hover:bg-[#1A202C]">Donate</Button>
+          </Link>
+          <Link href="/signup">
+            <Button variant="ghost">
+              Sign up
+            </Button>
+          </Link>
+          <Link href="/signin">
+            <Button variant="ghost">
+              Sign in
+            </Button>
+          </Link>
+        </div>
       </div>
     </header>
   )

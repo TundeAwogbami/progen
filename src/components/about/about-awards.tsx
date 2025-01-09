@@ -116,7 +116,7 @@ export function AboutAwards() {
 
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
               <Image
-                src="/graduates.jpg"
+                src="/images/graduates.jpg"
                 alt="Graduates celebrating"
                 fill
                 className="object-cover"

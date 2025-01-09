@@ -40,23 +40,7 @@ export function HeroSection() {
               Play Video
             </Button>
           </div>
-          <div className="flex space-x-10">
-            <Link href="/signup">
-              <Button 
-                className="bg-[#2D3748] border-white text-white hover:bg-[#FF5252]"
-              >
-                Sign up
-              </Button>
-            </Link>
-            <Link href="/signin">
-              <Button 
-                variant="outline" 
-                className="bg-[#2D3748] text-white hover:bg-white/10"
-              >
-                Sign in
-              </Button>
-            </Link>
-          </div>
+          
         </div>
       </div>
       <div className="absolute bottom-0 left-0 right-0 bg-black/50 text-white py-4">

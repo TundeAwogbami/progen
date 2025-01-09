@@ -15,19 +15,19 @@ const projects: Project[] = [
   {
     title: 'Awards and outdoor charity',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
-    image: '/projects/awards-charity.jpg',
+    image: '/images/awards-charity.jpg',
     link: '/projects/awards-charity'
   },
   {
     title: 'Weekly excursions',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
-    image: '/projects/weekly-excursions.jpg',
+    image: '/images/weekly-excursions.jpg',
     link: '/projects/weekly-excursions'
   },
   {
     title: 'Monthly public awareness',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.',
-    image: '/projects/public-awareness.jpg',
+    image: '/images/public-awareness.jpg',
     link: '/projects/public-awareness'
   }
 ]
@@ -77,7 +77,6 @@ function ProjectCard({ project }: { project: Project }) {
         <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
         <p className="text-white/80 text-sm mb-4">{project.description}</p>
         <Button 
-          variant="outline" 
           size="sm"
           asChild
           className="w-fit text-white border-white hover:bg-white hover:text-black"
@@ -152,7 +151,7 @@ export function ServicesProjects() {
         {/* Contribution Banner */}
         <div className="relative h-[300px] rounded-lg overflow-hidden">
           <Image
-            src="/classroom.jpg"
+            src="/images/classroom.jpg"
             alt="Classroom"
             fill
             className="object-cover"

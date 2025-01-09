@@ -23,9 +23,8 @@ function ProjectCard({ title, description, imageUrl }: ProjectCardProps) {
         <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
         <p className="text-white/80 text-sm mb-4">{description}</p>
         <Button 
-          variant="outline" 
           size="sm"
-          className="w-fit text-white border-white hover:bg-white hover:text-black"
+          className="w-fit bg-[#FF6B6B] text-white hover:bg-black hover:text-white"
         >
           Learn more
         </Button>
@@ -38,17 +37,17 @@ const projects = [
   {
     title: "Awards and outdoor charity",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    imageUrl: "/awards-charity.jpg"
+    imageUrl: "/images/awards-charity.jpg"
   },
   {
     title: "Weekly excursions",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    imageUrl: "/weekly-excursions.jpg"
+    imageUrl: "/images/weekly-excursions.jpg"
   },
   {
     title: "Monthly public awareness",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.",
-    imageUrl: "/public-awareness.jpg"
+    imageUrl: "/images/public-awareness.jpg"
   }
 ]
 

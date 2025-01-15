@@ -28,7 +28,7 @@ export function VolunteerDialog({ trigger }: VolunteerDialogProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Add your form submission logic here
+    //Form submission logic
     console.log('Form submitted:', formData)
     setOpen(false)
   }

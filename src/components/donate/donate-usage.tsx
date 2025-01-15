@@ -27,7 +27,7 @@ export function DonateUsage() {
         {/* Contribution Banner */}
         <div className="relative h-[300px] rounded-lg overflow-hidden">
           <Image
-            src="/classroom.jpg"
+            src="/images/classroom.jpg"
             alt="Classroom"
             fill
             className="object-cover"

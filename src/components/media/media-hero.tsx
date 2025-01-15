@@ -19,7 +19,7 @@ const newsArticles: NewsArticle[] = [
     title: 'Meet our latest Awardee',
     date: '1st Jan 2025',
     excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim',
-    image: '/news/awardee.jpg',
+    image: '/images/awardee.jpg',
     link: '/news/latest-awardee'
   },
   {
@@ -27,7 +27,7 @@ const newsArticles: NewsArticle[] = [
     title: 'A trip to Crest School',
     date: '1st Jan 2025',
     excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim',
-    image: '/news/school-trip.jpg',
+    image: '/images/school-trip.jpg',
     link: '/news/crest-school-trip'
   },
   {
@@ -35,7 +35,7 @@ const newsArticles: NewsArticle[] = [
     title: 'Graduating in style',
     date: '1st Jan 2025',
     excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim',
-    image: '/news/graduation.jpg',
+    image: '/images/graduates.jpg',
     link: '/news/graduation'
   }
 ]
@@ -83,7 +83,6 @@ export function MediaHero() {
               ut sem vitae risus tristique posuere.
             </p>
             <Button 
-              variant="outline" 
               className="bg-black text-white border-white hover:bg-white hover:text-[#8D7B74]"
             >
               Read more

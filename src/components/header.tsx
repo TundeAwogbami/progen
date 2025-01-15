@@ -21,14 +21,14 @@ export default function Header() {
           <Link href="/services" className="text-sm font-medium hover:text-red-600">
             What We Do
           </Link>
-          <Link href="/quiz" className="text-sm font-medium hover:text-red-600">
-            Quiz
-          </Link>
           <Link href="/media" className="text-sm font-medium hover:text-red-600">
             Media
           </Link>
           <Link href="/contact" className="text-sm font-medium hover:text-red-600">
             Contact
+          </Link>
+          <Link href="/quiz" className="text-sm font-medium hover:text-red-600">
+            Quiz
           </Link>
         </nav>
         <div className="hidden md:flex items-center space-x-4">

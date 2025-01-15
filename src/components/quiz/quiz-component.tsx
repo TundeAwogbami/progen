@@ -30,6 +30,12 @@ const questions: Question[] = [
     text: "Who painted the Mona Lisa?",
     options: ["Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Michelangelo"],
     correctAnswer: "Leonardo da Vinci"
+  },
+  {
+    id: 4,
+    text: "Who is the President of USA?",
+    options: ["Barack O Bama", "Bill Clinton", "Jude John", "Donald Trump"],
+    correctAnswer: "Donald Trump"
   }
 ]
 

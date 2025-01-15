@@ -97,7 +97,7 @@ export function SignupForm() {
           type="button"
           variant="outline"
           className="w-full"
-          onClick={() => {/* Add Google sign in logic */}}
+          onClick={() => {/*Google sign in logic*/}}
         >
           <Image
             src="/images/google.jpg"

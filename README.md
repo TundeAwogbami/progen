@@ -1,10 +1,10 @@
 # ProGenHub Innovation
 
-A website for **ProGenHub Innovation** , a Nigerian non-profit organisation that rewards schools and students for exceptional academic performance and special talents. The platform enables donations, volunteer sign-ups, event tracking, and public awareness of the organisation's work.
+A website for **ProGenHub Innovation**, a Nigerian non-profit organisation that rewards schools and students for exceptional academic performance and special talents. The platform enables donations, volunteer sign-ups, event tracking, and public awareness of the organisation's work.
 
 ---
 
-## 🔗 Live Demo
+## Live Demo
 
 [View Live →](Ongoing)
 
@@ -19,7 +19,7 @@ ProGenHub Innovation is an education-focused non-profit that identifies and cele
 ## Features
 
 - **Landing page** — hero section with mission statement, stats, and call-to-action
-- ℹ**About page** — mission, vision, team profiles, awards history, and supporters
+- **About page** — mission, vision, team profiles, awards history, and supporters
 - **Services page** — educational support, awards, scholarships, and funding programmes
 - **Projects page** — showcasing completed and ongoing initiatives
 - **Donate page** — NGN donation form with preset amounts, custom input, one-time and monthly options

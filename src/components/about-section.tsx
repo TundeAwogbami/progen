@@ -18,14 +18,11 @@ export function AboutSection() {
             </h2>
             
             <p className="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-              eros elementum tristique.
+              We believe exceptional performance deserves recognition. Through our scholarship and rewards program, we celebrate outstanding students and partner schools that demonstrate academic excellence, leadership, innovation, and a commitment to continuous learning. By recognizing achievement, we inspire more students to reach their full potential and encourage schools to maintain high educational standards.
             </p>
             
             <p className="text-gray-600">
-              Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
-              Nunc ut sem vitae risus tristique posuere.
+              Our rewards include scholarships, academic grants, learning resources, certificates of excellence, and special recognition programs designed to motivate students while supporting institutions that consistently nurture future leaders. Together, we're building a culture where hard work, excellence, and educational success are valued and rewarded.
             </p>
             
             <Button 
